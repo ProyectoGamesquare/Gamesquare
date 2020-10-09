@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.container-nav{
+    width: 960px;
+    margin: 0px auto;
+    height: 100px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.container-nav__ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+}
+
+.container-nav__li{
+    margin-top: 30px;
+    padding: 5px;
+    list-style: none;
+}
+
+.container-nav__li a{
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+}
+
+.container-nav__li a:hover{
+    color: #ff9100;
+}
+
+.btn{
+    border: 5px solid;
+    background-color: #ff9100;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0);
+    outline: rgb(0,0,0) 1px solid;
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn:hover{
+    border: 1px;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.5), 0 0 20px rgba(0,0,0,0.2);
+    outline-color: rgba(0,0,0,0);
+    outline-offset: 25px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0);
+    background-color: #000;
+    font-size: 30px;
+
+}
+
+.credits{
+    border-radius: 1em;
+    padding: 1em;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    max-width: 35em;
+    margin: auto;
+    top: 90px;
+    max-height: 750px;
+    position: relative;
+    display: block;
+    width: 95%;
+    border: .2em solid #ff9100;
+    box-shadow: inset 0 0 0.5em #ff9100, 0 0 0.5em;
+    animation: credits 2s;
+}
+
+.credits::before{
+    background: #000;
+    padding: 20px;
+    text-transform: uppercase;
+    top:-0.6em;
+    text-align: justify;
+    transform: translateX(-50%);
+    z-index: 100px;
+}
+
+.credits h2{
+    margin: 10px;
+    font-size: 15px;
+}
+
+.credits p{
+    font-size: 20px;
+    font-family: consolas;
+    text-align: justify;
+    margin: 10px;
+}
+
+.logo{
+    position: absolute;
+    right: 50px;
+    top: 200px;
+    width: 666px;
+    height: 430px;
+}
+
+.ojito{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+@keyframes credits{
+    0%{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+body{
+    background-image: url(../ojo.PNG);
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-height: 900px){
+    .logo{
+        width: 1px;
+        height: 1px;
+    }    
+}
+
+
+@media screen and (max-width: 1440px){
+    .logo{
+        width: 0px;
+        height: 0px;
+    }
+    .ojito{
+        width: 0px;
+        height: 0px;
+    }    
+}
