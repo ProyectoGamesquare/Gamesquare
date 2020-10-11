@@ -96,14 +96,7 @@
 .credits ul li{
     list-style: none;
     margin: 8px;
-    font-size: 10px;
-}
-
-.credits ul li a{
-    padding: 5px;
-    color: #fafafa;
-    display: inline-block;
-    font-size: 10px;
+    font-size: 5px;
 }
 
 .rodsquarebueno{
